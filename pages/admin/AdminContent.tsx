@@ -83,7 +83,7 @@ const AdminContent: React.FC = () => {
                 placeholder="Search files..." 
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                className={`pl-10 pr-4 py-2 rounded-full border ${theme === 'dark' ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300'} focus:outline-none focus:ring-2 focus:ring-indigo-500`}
+                className={`pl-10 pr-4 py-2 rounded-full border ${theme === 'dark' ? 'bg-gray-800 border-gray-600 text-white' : 'bg-white border-gray-300 text-gray-900'} focus:outline-none focus:ring-2 focus:ring-indigo-500`}
             />
          </div>
        </div>
@@ -110,7 +110,7 @@ const AdminContent: React.FC = () => {
                <input 
                  type="text" 
                  placeholder="e.g. Chapter 1 Summary"
-                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                  value={newFile.title}
                  onChange={e => setNewFile({...newFile, title: e.target.value})}
                  required
@@ -119,7 +119,7 @@ const AdminContent: React.FC = () => {
              <div>
                <label className={`block mb-1 text-sm font-bold ${themeColors.text}`}>Subject <span className="text-red-500">*</span></label>
                <select
-                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                  value={newFile.subjectId}
                  onChange={e => setNewFile({...newFile, subjectId: e.target.value})}
                  required
@@ -133,7 +133,7 @@ const AdminContent: React.FC = () => {
              <div>
                <label className={`block mb-1 text-sm font-bold ${themeColors.text}`}>Type <span className="text-red-500">*</span></label>
                <select
-                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                 className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                  value={newFile.type}
                  onChange={e => setNewFile({...newFile, type: e.target.value as any})}
                  required
@@ -156,7 +156,7 @@ const AdminContent: React.FC = () => {
                   <input 
                     type="url" 
                     placeholder="https://drive.google.com/..."
-                    className={`w-full pl-10 pr-3 py-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                    className={`w-full pl-10 pr-3 py-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                     value={newFile.url}
                     onChange={e => setNewFile({...newFile, url: e.target.value})}
                     required

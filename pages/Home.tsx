@@ -146,7 +146,7 @@ const Home: React.FC = () => {
                   <input 
                     required
                     type="text" 
-                    className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300'}`}
+                    className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                     value={requestData.name}
                     onChange={e => setRequestData({...requestData, name: e.target.value})}
                   />
@@ -154,7 +154,7 @@ const Home: React.FC = () => {
                 <div>
                   <label className={`block mb-2 font-medium ${themeColors.text}`}>{translate('subjects')}</label>
                   <select 
-                    className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300'}`}
+                    className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                     value={requestData.subjectId}
                     onChange={e => setRequestData({...requestData, subjectId: e.target.value})}
                   >
@@ -168,7 +168,7 @@ const Home: React.FC = () => {
                    <textarea 
                      required
                      rows={4}
-                     className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300'}`}
+                     className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                      value={requestData.comments}
                      onChange={e => setRequestData({...requestData, comments: e.target.value})}
                    ></textarea>

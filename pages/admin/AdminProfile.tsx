@@ -66,7 +66,7 @@ const AdminProfile: React.FC = () => {
                 <label className={`block mb-1 font-medium ${themeColors.text}`}>Current Password</label>
                 <input 
                   type="password" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={passwords.current}
                   onChange={e => setPasswords({...passwords, current: e.target.value})}
                   required
@@ -76,7 +76,7 @@ const AdminProfile: React.FC = () => {
                 <label className={`block mb-1 font-medium ${themeColors.text}`}>New Password</label>
                 <input 
                   type="password" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={passwords.new}
                   onChange={e => setPasswords({...passwords, new: e.target.value})}
                   required
@@ -86,7 +86,7 @@ const AdminProfile: React.FC = () => {
                 <label className={`block mb-1 font-medium ${themeColors.text}`}>Confirm New Password</label>
                 <input 
                   type="password" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={passwords.confirm}
                   onChange={e => setPasswords({...passwords, confirm: e.target.value})}
                   required

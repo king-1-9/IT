@@ -63,6 +63,7 @@ export const TRANSLATIONS = {
     addUser: 'Add New User',
     role: 'Role',
     created: 'Created',
+    back: 'Go Back',
   },
   ar: {
     welcome: 'مرحبًا بكم في بوابة تقنية المعلومات',
@@ -112,6 +113,7 @@ export const TRANSLATIONS = {
     addUser: 'إضافة مستخدم جديد',
     role: 'الصلاحية',
     created: 'تاريخ الإنشاء',
+    back: 'رجوع',
   },
 };
 

@@ -42,7 +42,7 @@ const AdminLogin: React.FC = () => {
              <label className={`block mb-2 font-medium ${themeColors.text}`}>{translate('adminUser')}</label>
              <input 
                type="text" 
-               className={`w-full p-3 rounded-lg border outline-none transition ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white focus:border-indigo-500' : 'bg-white border-gray-300 focus:border-indigo-500'}`}
+               className={`w-full p-3 rounded-lg border outline-none transition ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white focus:border-indigo-500' : 'bg-white border-gray-300 text-gray-900 focus:border-indigo-500'}`}
                value={username}
                onChange={e => setUsername(e.target.value)}
              />
@@ -52,7 +52,7 @@ const AdminLogin: React.FC = () => {
              <div className="relative">
                <input 
                  type={showPassword ? "text" : "password"}
-                 className={`w-full p-3 rounded-lg border outline-none transition ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white focus:border-indigo-500' : 'bg-white border-gray-300 focus:border-indigo-500'}`}
+                 className={`w-full p-3 rounded-lg border outline-none transition ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white focus:border-indigo-500' : 'bg-white border-gray-300 text-gray-900 focus:border-indigo-500'}`}
                  value={password}
                  onChange={e => setPassword(e.target.value)}
                />

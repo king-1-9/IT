@@ -3,7 +3,6 @@ import { HashRouter, Routes, Route, Outlet, Navigate, useLocation } from 'react-
 import { LayoutProvider, useLayout } from './components/LayoutProvider';
 import NavBar from './components/NavBar';
 import Footer from './components/Footer';
-import AIAssistant from './components/AIAssistant';
 import Home from './pages/Home';
 import Subjects from './pages/Subjects';
 import SubjectDetail from './pages/SubjectDetail';
@@ -14,6 +13,7 @@ import AdminSubjects from './pages/admin/AdminSubjects';
 import AdminUsers from './pages/admin/AdminUsers';
 import AdminProfile from './pages/admin/AdminProfile';
 import AdminLayout from './components/AdminLayout';
+import BackButton from './components/BackButton';
 import { StorageService } from './services/storageService';
 
 const StudentLayout = () => {
@@ -27,7 +27,6 @@ const StudentLayout = () => {
            <Outlet />
         </div>
       </main>
-      <AIAssistant />
       <Footer />
     </>
   );
@@ -43,6 +42,7 @@ const App: React.FC = () => {
   return (
     <LayoutProvider>
       <HashRouter>
+        <BackButton />
         <Routes>
           {/* Public / Student Routes */}
           <Route element={<StudentLayout />}>

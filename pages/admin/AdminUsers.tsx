@@ -87,7 +87,7 @@ const AdminUsers: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>{translate('name')}</label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newUser.fullName}
                   onChange={e => setNewUser({...newUser, fullName: e.target.value})}
                 />
@@ -95,7 +95,7 @@ const AdminUsers: React.FC = () => {
              <div>
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>Role / Type</label>
                 <select
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newUser.role}
                   onChange={e => setNewUser({...newUser, role: e.target.value as any})}
                 >
@@ -108,7 +108,7 @@ const AdminUsers: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>{translate('adminUser')}</label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newUser.username}
                   onChange={e => setNewUser({...newUser, username: e.target.value})}
                   required
@@ -118,7 +118,7 @@ const AdminUsers: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>{translate('adminPass')}</label>
                 <input 
                   type="password" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newUser.password}
                   onChange={e => setNewUser({...newUser, password: e.target.value})}
                   required

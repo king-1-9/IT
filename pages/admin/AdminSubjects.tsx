@@ -76,7 +76,7 @@ const AdminSubjects: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>Name (English) <span className="text-red-500">*</span></label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newSubject.nameEn}
                   onChange={e => setNewSubject({...newSubject, nameEn: e.target.value})}
                   required
@@ -86,7 +86,7 @@ const AdminSubjects: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>الاسم (بالعربية) <span className="text-red-500">*</span></label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newSubject.nameAr}
                   onChange={e => setNewSubject({...newSubject, nameAr: e.target.value})}
                   required
@@ -96,7 +96,7 @@ const AdminSubjects: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>Description (English)</label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newSubject.descriptionEn}
                   onChange={e => setNewSubject({...newSubject, descriptionEn: e.target.value})}
                 />
@@ -105,7 +105,7 @@ const AdminSubjects: React.FC = () => {
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>الوصف (بالعربية)</label>
                 <input 
                   type="text" 
-                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                  className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                   value={newSubject.descriptionAr}
                   onChange={e => setNewSubject({...newSubject, descriptionAr: e.target.value})}
                 />
@@ -113,7 +113,7 @@ const AdminSubjects: React.FC = () => {
              <div className="md:col-span-2">
                 <label className={`block mb-1 text-sm ${themeColors.text}`}>Icon</label>
                 <select
-                   className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50'}`}
+                   className={`w-full p-3 rounded-lg border ${theme === 'dark' ? 'bg-gray-700 border-gray-600 text-white' : 'bg-gray-50 border-gray-300 text-gray-900'}`}
                    value={newSubject.icon}
                    onChange={e => setNewSubject({...newSubject, icon: e.target.value})}
                 >
